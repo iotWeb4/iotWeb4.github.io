@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> IoT | Kel 4</title>
+        <link rel="stylesheet" href="css/css.css">
+        <style>
+            body{
+                background-color : black;
+            }
+        </style>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    
+    <body>
+        <!-- navbar -->
+        <ul>
+            <li><a class="active" href="index.html">Beranda</a></li>
+            <li><a href="sensorAsapSuhu.html">Suhu & Asap</a></li>
+            <li><a href="sensorSuaraGerak.html">Gerak & Suara</a></li>
+        </ul>
+
+        <!-- content -->
+        <div class="main-container">
+            <div class="heading">
+            <h1 class="heading__credits">S M A R T H O M E</h1>
+            <br><br>
+            </div>
+            <center><div id="chart_div" style="width: 400px; height: 120px;"></div><</center>
+            <br><br><br><br>
+            <div class="cards">
+            <div class="card card-1">
+                <center><h2 class="card__title">Derajat Suhu</h2></center><br><br>
+                <center><h3 class="card__title" id="suhu"></h3></center>
+                <center><p class="card__title">celcius</p></center>
+            </div>
+            <div class="card card-2">
+                <center><h2 class="card__title">Kelembaban</h2></center><br><br>
+                <center><h3 class="card__title" id="humi"></h3></center>
+                <center><p class="card__title">RH</p></center>
+            </div>
+            <div class="card card-3">
+                <center><h2 class="card__title">Message Arrived</h2></center><br><br>
+                <center><p class="card__title" id="arrived"></p></center>
+            </div>
+            
+        </div>
+</body>
+</html>
